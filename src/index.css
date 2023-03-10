@@ -1,0 +1,60 @@
+body{
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url(https://img.freepik.com/free-vector/animals-theme-template-illustration_53876-62836.jpg);
+  background-size: 1355px;
+}
+.card{
+  height:300px;
+  width:400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.flipcard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: all 0.25s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  transform: rotateX(var(--rotate-x, 0))
+}
+.flipcard.flip {
+  --rotate-x: 180deg;
+  cursor: pointer;
+}
+.front , .back{
+ /* This part controls the flip */
+ backface-visibility: hidden;
+  
+ /* Size and card position */
+ position: absolute;
+ width: 100%;
+ height: 100%;
+
+ /* Appearance */
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+}
+
+.front{
+  background-color: antiquewhite;
+}
+.back{
+  transform: rotateX(180deg);
+  background-color: bisque;
+}
