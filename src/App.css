@@ -19,5 +19,6 @@
 .nextCard{
   margin-top: 5%;
   width: 100px;
+  height: 25px;
   cursor: pointer;
 }

@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import animalBck from "./componets/images/animalBackground.jpeg"
 import Cards from "./componets/card.jsx"
+
 function App() {
   const [streak, setStreak] = useState(0);
   return (
@@ -12,6 +13,7 @@ function App() {
       <h5>Number of cards: 10</h5>
       <h5>Current Streak: {streak}, Longest Streak: </h5>
         <Cards />
+
      </div>
   )
 }

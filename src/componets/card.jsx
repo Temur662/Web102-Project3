@@ -1,8 +1,8 @@
 import {useState} from 'react'
 import React from 'react'
+import Input from './inputs'
 
 const Cards = () => {
-    const [card, setCardFlip] = useState("flip-card")
     const [button, setButton] = useState(0);
     const [flip, SetFlip] = useState(false);
     const questionsList = ["What animal is known as the King of the Jungle?", "What animal has 8 tentacles?", "What is the fastest land mammal?", "This animal when they are in a group are reffered to as a 'Murder', What animal is this?", "Are reptiles cold or warm blooded?" , "How do bats see in the night?", "Do Alligators live in salt or fresh water?", "What is national animal of Uzbekistan?", "What species of living ape is the biggest?", "What is the biggest living animal?"]
@@ -17,11 +17,11 @@ const Cards = () => {
         setButton(button + 1);
         }
     }
-    const flipTheCard = () =>{
-        if(card == "flip-card"){
-            setCardFlip("flip-card-flip");
+    const goBackButton = () =>{
+        if(button <= 0){
+            setButton(0);
         }else{
-            setCardFlip("flip-card");
+            setButton(button - 1);
         }
     }
     return (
@@ -36,7 +36,9 @@ const Cards = () => {
             </div>
         </div>
         </div>
-        <button type="next" class="nextCard" onClick = {handleButtonClick}>⭢</button>
+        <Input array = {answersList} arrayIndex = {questionsList}/>
+        <button type = "back" className = "nextCard" onClick={goBackButton}>⬅</button>
+        <button type="next" className = "nextCard" onClick = {handleButtonClick}>➡️</button>
         </div>
     )
 }
