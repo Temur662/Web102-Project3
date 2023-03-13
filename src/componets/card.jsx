@@ -36,7 +36,7 @@ const Cards = () => {
             </div>
         </div>
         </div>
-        <Input array = {answersList} arrayIndex = {questionsList}/>
+        <Input answers = {answersList} questions = {questionsList} button = {button}/>
         <button type = "back" className = "nextCard" onClick={goBackButton}>⬅</button>
         <button type="next" className = "nextCard" onClick = {handleButtonClick}>➡️</button>
         </div>

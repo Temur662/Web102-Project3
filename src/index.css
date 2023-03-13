@@ -58,3 +58,19 @@ body{
   transform: rotateX(180deg);
   background-color: bisque;
 }
+.input{
+  border-color: black;
+}
+.True{
+  border-color: blue;
+}
+.False{
+  border-color: red;
+}
+
+#streak{
+  color: white;
+}
+#guess{
+  color: white;
+}

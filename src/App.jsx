@@ -11,7 +11,6 @@ function App() {
       <h1>Guess That Animal!</h1>
       <h5>Test your animal knowledge!</h5>
       <h5>Number of cards: 10</h5>
-      <h5>Current Streak: {streak}, Longest Streak: </h5>
         <Cards />
 
      </div>
