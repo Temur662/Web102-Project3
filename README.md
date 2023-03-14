@@ -15,4 +15,7 @@ Required Features
 [X] Moving Multiple Ways in the Card List
 [X] A back button displayed on the card can be used to return to the previous card in a set sequence
 [X] A next button displayed on the card can be used to navigate to the next card in a set sequence
+
+Stretch Features
+[X]A counter displays the user’s current and longest streak of correct responses
 ![](https://github.com/Temur662/Web102-Project3/blob/main/Project3.gif)
