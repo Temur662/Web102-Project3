@@ -67,10 +67,12 @@ body{
 .False{
   border-color: red;
 }
-
+.Streak{
+  background-color: antiquewhite;
+}
 #streak{
-  color: white;
+  color: black;
 }
 #guess{
-  color: white;
+  color: black;
 }

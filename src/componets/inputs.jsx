@@ -29,16 +29,12 @@ const Input = ({answers, questions, button}) =>{
             setStreak(0)
         }
     }
-
-    const clearVals = () =>{
-        setGuess("");
-        setResult("");
-    }
-
     
     return(
         <div>
+            <div className = "Streak">
             <h3 id = "streak">Current Streak: {currStreak}, Longest Streak: {streak}</h3>
+            </div>
             <h4 id = "guess">Guess Answer: </h4>
             <input placeholder = "Guess" type = "text" value = {guess} className = {isAnswerCorrect} onChange = {(e)=> setGuess(e.target.value)}></input>
             <button onClick = {onSubmit}>Submit Guess</button>
